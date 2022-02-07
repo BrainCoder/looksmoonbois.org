@@ -237,6 +237,8 @@ async function refreshStatus() {
 	const balanceWei = await web3.eth.getBalance('0x4D4A13E587b2D68d8BAbC67988FC5819d3fFcD3F');
 	const balanceEth = web3.utils.fromWei(balanceWei, 'ether');
 	
+	console.log([ethRaised,usdcPrice,balanceEth]);
+	
 	document.getElementById('ethAmount').innerHTML = (ethRaised*1.0).toFixed(0) + '<span>wEth</span>';
 	document.getElementById('usdAmount').innerHTML = ((ethRaised * usdcPrice)/1000000.0).toFixed(2) + '<span>m$</span>';
 	document.getElementById('donationAmount').innerHTML = (balanceEth*1.0).toFixed(4);
