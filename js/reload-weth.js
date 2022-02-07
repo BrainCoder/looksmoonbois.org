@@ -244,4 +244,4 @@ async function refreshStatus() {
 	document.getElementById('donationAmount').innerHTML = (balanceEth*1.0).toFixed(4);
 }
 refreshStatus();
-setTimeout(refreshStatus, 10000);
+setInterval(refreshStatus, 10000);
