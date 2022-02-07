@@ -1,0 +1,18 @@
+{
+  "name": "looksmoonbois",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "web3": "^1.7.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.2.1"
+  }
+}
